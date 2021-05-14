@@ -12,9 +12,15 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_section")
+<<<<<<< HEAD
 public class Section implements Serializable {
 	private static final long serialVersionUID = 1L;
 
+=======
+public class Section implements Serializable{
+	private static final long serialVersionUID = 1L;
+	
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -33,7 +39,11 @@ public class Section implements Serializable {
 	
 	public Section() {
 	}
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	public Section(Long id, String title, String description, Integer position, String imgUri, Resource resource,
 			Section prerequisite) {
 		super();
@@ -126,4 +136,8 @@ public class Section implements Serializable {
 			return false;
 		return true;
 	}
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 }

@@ -5,19 +5,30 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
+<<<<<<< HEAD
 		<version>2.3.5.RELEASE</version>
+=======
+		<version>2.4.5</version>
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.devsuperior</groupId>
 	<artifactId>dslearnbds</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dslearnbds</name>
+<<<<<<< HEAD
 	<description>DSLearn Bootcamp</description>
 
 	<properties>
 		<java.version>11</java.version>
 	</properties>
 
+=======
+	<description>DsLearn Bootcamp</description>
+	<properties>
+		<java.version>11</java.version>
+	</properties>
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -37,12 +48,15 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+<<<<<<< HEAD
 			<exclusions>
 				<exclusion>
 					<groupId>org.junit.vintage</groupId>
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
+=======
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 		</dependency>
 	</dependencies>
 

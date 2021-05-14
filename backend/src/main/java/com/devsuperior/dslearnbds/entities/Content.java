@@ -5,7 +5,11 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_content")
+<<<<<<< HEAD
 public class Content extends Lesson {
+=======
+public class Content extends Lesson{
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	private static final long serialVersionUID = 1L;
 
 	private String textContent;
@@ -35,4 +39,8 @@ public class Content extends Lesson {
 	public void setVideoUri(String videoUri) {
 		this.videoUri = videoUri;
 	}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 }

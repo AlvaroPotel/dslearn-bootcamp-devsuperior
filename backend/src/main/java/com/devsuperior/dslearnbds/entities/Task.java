@@ -8,15 +8,25 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_task")
+<<<<<<< HEAD
 public class Task extends Lesson {
+=======
+public class Task extends Lesson{
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	private static final long serialVersionUID = 1L;
 
 	private String description;
 	private Integer questionCount;
 	private Integer approvalCount;
+<<<<<<< HEAD
 	private Double weight;
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")	
+=======
+	private Double weight = 1.0;
+	
+	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	private Instant dueDate;
 	
 	public Task() {
@@ -71,4 +81,8 @@ public class Task extends Lesson {
 	public void setDueDate(Instant dueDate) {
 		this.dueDate = dueDate;
 	}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 }

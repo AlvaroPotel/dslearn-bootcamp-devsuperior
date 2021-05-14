@@ -1,5 +1,9 @@
 package com.devsuperior.dslearnbds.entities;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.ArrayList;
@@ -31,6 +35,7 @@ public class Topic implements Serializable {
 
 	@Column(columnDefinition = "TEXT")
 	private String body;
+<<<<<<< HEAD
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant moment;
@@ -47,6 +52,24 @@ public class Topic implements Serializable {
 	@JoinColumn(name = "lesson_id")
 	private Lesson lesson;
 	
+=======
+
+	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+	private Instant moment;
+
+	@ManyToOne
+	@JoinColumn(name = "author_id")
+	private User author;
+
+	@ManyToOne
+	@JoinColumn(name = "offer_id")
+	private Offer offer;
+
+	@ManyToOne
+	@JoinColumn(name = "lesson_id")
+	private Lesson lesson;
+
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	@ManyToOne
 	@JoinColumn(name = "reply_id")
 	private Reply answer;
@@ -59,7 +82,11 @@ public class Topic implements Serializable {
 	
 	@OneToMany(mappedBy = "topic")
 	private List<Reply> replies = new ArrayList<>();
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	public Topic() {
 	}
 
@@ -133,7 +160,11 @@ public class Topic implements Serializable {
 	public Set<User> getLikes() {
 		return likes;
 	}
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	public Reply getAnswer() {
 		return answer;
 	}
@@ -170,4 +201,8 @@ public class Topic implements Serializable {
 			return false;
 		return true;
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210

@@ -1,5 +1,9 @@
 package com.devsuperior.dslearnbds.entities;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.HashSet;
@@ -34,18 +38,30 @@ public class Reply implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "topic_id")
 	private Topic topic;
+<<<<<<< HEAD
 	
 	@ManyToOne
 	@JoinColumn(name = "author_id")
 	private User author;
 	
+=======
+
+	@ManyToOne
+	@JoinColumn(name = "author_id")
+	private User author;
+
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	@ManyToMany
 	@JoinTable(name = "tb_reply_likes",
 		joinColumns = @JoinColumn(name = "reply_id"),
 		inverseJoinColumns = @JoinColumn(name = "user_id")
 	)
 	private Set<User> likes = new HashSet<>();
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	public Reply() {
 	}
 
@@ -117,4 +133,8 @@ public class Reply implements Serializable {
 			return false;
 		return true;
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
