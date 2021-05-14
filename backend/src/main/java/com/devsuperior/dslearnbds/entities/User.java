@@ -19,52 +19,29 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_user")
-<<<<<<< HEAD
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-=======
-public class User implements Serializable{
-	private static final long serialVersionUID = 1L;
-	
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
-<<<<<<< HEAD
-	private String email;
-=======
 	private String  email;
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	private String password;
 	
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = "tb_user_role",
 		joinColumns = @JoinColumn(name = "user_id"),
-<<<<<<< HEAD
-		inverseJoinColumns = @JoinColumn(name = "role_id"))	
-=======
 		inverseJoinColumns = @JoinColumn(name = "role_id"))
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	private Set<Role> roles = new HashSet<>();
 	
 	@OneToMany(mappedBy = "user")
 	private List<Notification> notifications = new ArrayList<>();
-<<<<<<< HEAD
-	
-	public User() {
-	}
-
-	public User(Long id, String name, String email, String password) {
-		super();
-=======
 
 	public User() {
 	}
 	
 	public User(Long id, String name, String email, String password) {
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 		this.id = id;
 		this.name = name;
 		this.email = email;
@@ -106,11 +83,6 @@ public class User implements Serializable{
 	public Set<Role> getRoles() {
 		return roles;
 	}
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	public List<Notification> getNotifications() {
 		return notifications;
 	}
@@ -139,8 +111,4 @@ public class User implements Serializable{
 			return false;
 		return true;
 	}
-<<<<<<< HEAD
-=======
-	
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 }

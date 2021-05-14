@@ -1,9 +1,5 @@
 package com.devsuperior.dslearnbds.entities;
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 import java.io.Serializable;
 import java.time.Instant;
 
@@ -25,28 +21,15 @@ public class Notification implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String text;
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant moment;
 	private boolean read;
 	private String route;
-<<<<<<< HEAD
-	
-	@ManyToOne
-	@JoinColumn(name = "user_id")
-	private User user;
-	
-=======
 
 	@ManyToOne
 	@JoinColumn(name = "user_id")
 	private User user;
 
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	public Notification() {
 	}
 
@@ -132,8 +115,4 @@ public class Notification implements Serializable {
 			return false;
 		return true;
 	}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210

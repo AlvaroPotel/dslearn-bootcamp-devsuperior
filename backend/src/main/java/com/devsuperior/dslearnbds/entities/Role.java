@@ -10,15 +10,9 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_role")
-<<<<<<< HEAD
-public class Role implements Serializable {
-	private static final long serialVersionUID = 1L;
-
-=======
 public class Role implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -45,10 +39,6 @@ public class Role implements Serializable{
 		return authority;
 	}
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	public void setAuthority(String authority) {
 		this.authority = authority;
 	}
@@ -77,8 +67,4 @@ public class Role implements Serializable{
 			return false;
 		return true;
 	}
-<<<<<<< HEAD
-=======
-
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 }

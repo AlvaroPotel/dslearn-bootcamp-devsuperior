@@ -13,19 +13,12 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-<<<<<<< HEAD
-import com.devsuperior.dslearnbds.entities.enums.ResourceType;
-
-@Entity
-@Table(name = "tb_resource")
-public class Resource implements Serializable {
-=======
 import com.devsuperior.dslearnbds.entities.enums.RecourceType;
+
 
 @Entity
 @Table(name = "tb_resource")
 public class Resource  implements Serializable{
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -35,34 +28,21 @@ public class Resource  implements Serializable{
 	private String description;
 	private Integer position;
 	private String imgUri;
-<<<<<<< HEAD
-	private ResourceType type;
-=======
 	private RecourceType type;
 	private String externalLink;
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	
 	@ManyToOne
 	@JoinColumn(name = "offer_id")
 	private Offer offer;
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	@OneToMany(mappedBy = "resource")
 	private List<Section> sections = new ArrayList<>();
 	
 	public Resource() {
 	}
 
-<<<<<<< HEAD
-	public Resource(Long id, String title, String description, Integer position, String imgUri, ResourceType type,
-			Offer offer) {
-=======
 	public Resource(Long id, String title, String description, Integer position, String imgUri, RecourceType type,
 			String externalLink, Offer offer) {
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 		super();
 		this.id = id;
 		this.title = title;
@@ -70,10 +50,7 @@ public class Resource  implements Serializable{
 		this.position = position;
 		this.imgUri = imgUri;
 		this.type = type;
-<<<<<<< HEAD
-=======
 		this.externalLink = externalLink;
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 		this.offer = offer;
 	}
 
@@ -117,16 +94,6 @@ public class Resource  implements Serializable{
 		this.imgUri = imgUri;
 	}
 
-<<<<<<< HEAD
-	public ResourceType getType() {
-		return type;
-	}
-
-	public void setType(ResourceType type) {
-		this.type = type;
-	}
-
-=======
 	public RecourceType getType() {
 		return type;
 	}
@@ -143,7 +110,6 @@ public class Resource  implements Serializable{
 		this.externalLink = externalLink;
 	}
 
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	public Offer getOffer() {
 		return offer;
 	}
@@ -151,13 +117,10 @@ public class Resource  implements Serializable{
 	public void setOffer(Offer offer) {
 		this.offer = offer;
 	}
-<<<<<<< HEAD
-=======
 	
 	public List<Section> getSections() {
 		return sections;
 	}
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 
 	@Override
 	public int hashCode() {
@@ -183,8 +146,4 @@ public class Resource  implements Serializable{
 			return false;
 		return true;
 	}
-<<<<<<< HEAD
-=======
-	
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 }

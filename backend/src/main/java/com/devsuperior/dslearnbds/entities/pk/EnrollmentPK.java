@@ -10,21 +10,12 @@ import com.devsuperior.dslearnbds.entities.Offer;
 import com.devsuperior.dslearnbds.entities.User;
 
 @Embeddable
-<<<<<<< HEAD
-public class EnrollmentPK implements Serializable {
-=======
 public class EnrollmentPK  implements Serializable{
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	private static final long serialVersionUID = 1L;
 
 	@ManyToOne
 	@JoinColumn(name = "user_id")
 	private User user;
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	@ManyToOne
 	@JoinColumn(name = "offer_id")
 	private Offer offer;
@@ -33,10 +24,7 @@ public class EnrollmentPK  implements Serializable{
 	}
 
 	public EnrollmentPK(User user, Offer offer) {
-<<<<<<< HEAD
 		super();
-=======
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 		this.user = user;
 		this.offer = offer;
 	}
@@ -87,8 +75,4 @@ public class EnrollmentPK  implements Serializable{
 			return false;
 		return true;
 	}
-<<<<<<< HEAD
-=======
-
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 }

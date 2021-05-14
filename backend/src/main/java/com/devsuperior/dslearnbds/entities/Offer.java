@@ -17,15 +17,9 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_offer")
-<<<<<<< HEAD
-public class Offer implements Serializable {
-	private static final long serialVersionUID = 1L;
-
-=======
 public class Offer implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -33,11 +27,6 @@ public class Offer implements Serializable{
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant startMoment;
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant endMoment;
 	
@@ -106,11 +95,6 @@ public class Offer implements Serializable{
 	public List<Resource> getResources() {
 		return resources;
 	}
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	public List<Topic> getTopics() {
 		return topics;
 	}
@@ -139,8 +123,4 @@ public class Offer implements Serializable{
 			return false;
 		return true;
 	}
-<<<<<<< HEAD
-=======
-	
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 }

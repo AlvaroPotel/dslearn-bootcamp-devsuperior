@@ -22,11 +22,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "tb_lesson")
 @Inheritance(strategy = InheritanceType.JOINED)
-<<<<<<< HEAD
-public abstract class Lesson implements Serializable {
-=======
 public abstract class Lesson implements Serializable{
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -48,22 +44,15 @@ public abstract class Lesson implements Serializable{
 		inverseJoinColumns = {
 				@JoinColumn(name = "user_id"),
 				@JoinColumn(name = "offer_id")
-<<<<<<< HEAD
 		}
 	)
-=======
-		})
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	private Set<Enrollment> enrollmentsDone = new HashSet<>();
 	
 	public Lesson() {
 	}
 
 	public Lesson(Long id, String title, Integer position, Section section) {
-<<<<<<< HEAD
 		super();
-=======
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 		this.id = id;
 		this.title = title;
 		this.position = position;
@@ -105,11 +94,6 @@ public abstract class Lesson implements Serializable{
 	public Set<Enrollment> getEnrollmentsDone() {
 		return enrollmentsDone;
 	}
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	public List<Deliver> getDeliveries() {
 		return deliveries;
 	}
@@ -138,8 +122,4 @@ public abstract class Lesson implements Serializable{
 			return false;
 		return true;
 	}
-<<<<<<< HEAD
-=======
-
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 }

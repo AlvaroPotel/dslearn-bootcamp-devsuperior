@@ -18,30 +18,15 @@ import com.devsuperior.dslearnbds.entities.pk.EnrollmentPK;
 @Entity
 @Table(name = "tb_enrollment")
 public class Enrollment {
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	@EmbeddedId
 	private EnrollmentPK id = new EnrollmentPK();
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant enrollMoment;
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant refundMoment;
 	private boolean available;
 	private boolean onlyUpdate;
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	@ManyToMany(mappedBy = "enrollmentsDone")
 	private Set<Lesson> lessonsDone = new HashSet<>();
 	
@@ -53,10 +38,7 @@ public class Enrollment {
 
 	public Enrollment(User user, Offer offer, Instant enrollMoment, Instant refundMoment, boolean available,
 			boolean onlyUpdate) {
-<<<<<<< HEAD
 		super();
-=======
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 		id.setUser(user);
 		id.setOffer(offer);
 		this.enrollMoment = enrollMoment;
@@ -72,11 +54,6 @@ public class Enrollment {
 	public void setStudent(User user) {
 		id.setUser(user);
 	}
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	public Offer getOffer() {
 		return id.getOffer();
 	}
@@ -84,11 +61,6 @@ public class Enrollment {
 	public void setOffer(Offer offer) {
 		id.setOffer(offer);
 	}
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	public Instant getEnrollMoment() {
 		return enrollMoment;
 	}
@@ -149,8 +121,4 @@ public class Enrollment {
 			return false;
 		return true;
 	}
-<<<<<<< HEAD
-=======
-	
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 }

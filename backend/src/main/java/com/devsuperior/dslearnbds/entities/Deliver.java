@@ -1,9 +1,4 @@
 package com.devsuperior.dslearnbds.entities;
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 import java.io.Serializable;
 import java.time.Instant;
 
@@ -28,7 +23,6 @@ public class Deliver implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String uri;
-<<<<<<< HEAD
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant moment;
@@ -37,35 +31,17 @@ public class Deliver implements Serializable {
 	private String feedback;
 	private Integer correctCount;
 	
-=======
-
-	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-	private Instant moment;
-
-	private DeliverStatus status;
-	private String feedback;
-	private Integer correctCount;
-
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	@ManyToOne
 	@JoinColumns({  
 		@JoinColumn(name = "offer_id"), 
 		@JoinColumn(name = "user_id") 
 	})
 	private Enrollment enrollment;
-<<<<<<< HEAD
 	
 	@ManyToOne
 	@JoinColumn(name = "lesson_id")
 	private Lesson lesson;
 	
-=======
-
-	@ManyToOne
-	@JoinColumn(name = "lesson_id")
-	private Lesson lesson;
-
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
 	public Deliver() {
 	}
 
@@ -170,8 +146,4 @@ public class Deliver implements Serializable {
 			return false;
 		return true;
 	}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 82cee9f7c06f0494ecceb5bba823784d6d438210
